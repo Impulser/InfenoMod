@@ -18,11 +18,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="InfernoMod.js" />
+    <Content Include="TypeScript\lib\require.js" />
+    <Content Include="TypeScript\lib\requirecss.js" />
+    <Content Include="TypeScript\lib\underscore.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="TypeScript\InfernoMod.ts" />
-    <TypeScriptCompile Include="TypeScript\Utilities.ts" />
+    <TypeScriptCompile Include="TypeScript\mod\Extensions.ts" />
+    <TypeScriptCompile Include="TypeScript\mod\InfernoMod.ts" />
+    <TypeScriptCompile Include="TypeScript\Main.ts" />
+    <TypeScriptCompile Include="TypeScript\modules\require.d.ts" />
+    <TypeScriptCompile Include="TypeScript\mod\Utilities.ts" />
   </ItemGroup>
   <ItemGroup>
     <None Include="web.Debug.config">
@@ -32,6 +38,7 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
